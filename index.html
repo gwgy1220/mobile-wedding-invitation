@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>김도현 ♥ 이서연 결혼합니다</title>
+
+<!-- 링크 미리보기 (OG) -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="김도현 ♥ 이서연, 결혼합니다" />
+<meta property="og:description" content="2026년 10월 18일 일요일 낮 12시 30분 · 그랜드컨벤션 5층 그레이스홀" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nanum+Myeongjo:wght@400;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+<style>
+:root{
+  --paper:#FAF7F1;
+  --paper-2:#F2ECE1;
+  --card:#FFFFFF;
+  --ink:#33312B;
+  --ink-soft:#7A756A;
+  --line:#E7E1D4;
+  --line-strong:#D8D0BF;
+  --sage:#8A6D4B;
+  --sage-deep:#5E472F;
+  --sage-soft:#B6A184;
+  --blush:#B98A83;
+  --shadow:0 18px 50px -28px rgba(60,54,40,.35);
+  --radius:18px;
+  --radius-lg:26px;
+  --serif:"Cormorant Garamond","08SeoulHangang",serif;
+  --myeongjo:"08SeoulHangang","Nanum Myeongjo",sans-serif;
+  --sans:"08SeoulHangang","Pretendard","Apple SD Gothic Neo",system-ui,sans-serif;
+  --num:'Arsenal SC','Poppins','08SeoulHangang',sans-serif;
+
+  /* ===== Type scale (고정 토큰) =====
+     display 60/44/32 · h1 24 · h2 20 · lead 18 · body 16 · sm 14 · caption 13 · label 12 */
+  --fs-display:60px;
+  --fs-xxl:44px;
+  --fs-xl:32px;
+  --fs-h1:24px;
+  --fs-h2:20px;
+  --fs-lead:18px;
+  --fs-body:16px;
+  --fs-sm:14px;
+  --fs-caption:13px;
+  --fs-label:12px;
+  --frame:460px;
+}
+
+/* White Angelica: 프로젝트에 포함된 폰트 파일을 직접 로드하여
+   설치 여부와 관계없이 모든 하객에게 동일하게 표시된다. */
+@font-face{
+  font-family:'White Angelica';
+  src: url('white_angelica/WhiteAngelica.ttf') format('truetype');
+  font-display:swap;
+}
+@font-face{
+  font-family:'histeagin';
+  src: url('histeagin.ttf') format('truetype');
+  font-display:swap;
+}
+/* 08SeoulHangang: 한글 본문/제목용 (Light / Medium) */
+@font-face{
+  font-family:'08SeoulHangang';
+  src: url('폰트/08SeoulHangangL.ttf') format('truetype');
+  font-weight:300; font-display:swap;
+}
+@font-face{
+  font-family:'08SeoulHangang';
+  src: url('폰트/08SeoulHangangM.ttf') format('truetype');
+  font-weight:500; font-display:swap;
+}
+
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--ink);
+  background:#E9E3D6;
+  /* subtle paper texture around the mobile frame */
+  background-image:radial-gradient(circle at 30% 20%, #EFE9DC 0%, #E4DDCE 60%, #DED6C5 100%);
+  min-height:100vh;
+  line-height:1.75;
+  font-size:var(--fs-body);
+  letter-spacing:.005em;
+}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;}
+a{color:inherit;}
+
+/* ---------- mobile frame on desktop ---------- */
+.app{
+  max-width:var(--frame);
+  margin:0 auto;
+  background:var(--paper);
+  min-height:100vh;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 40px 120px -40px rgba(50,44,32,.55);
+}
+
+/* ---------- typography helpers ---------- */
+.eyebrow{
+  font-family:var(--serif);
+  font-style:italic;
+  font-weight:500;
+  color:var(--sage);
+  font-size:var(--fs-body);
+  letter-spacing:.08em;
+}
+.kicker{
+  font-family:'Arsenal SC','Poppins',sans-serif;
+  font-size:var(--fs-label);
+  letter-spacing:.02em;
+  text-transform:none;
+  color:var(--sage);
+  font-weight:400;
+}
+.title-ko{
+  font-family:var(--myeongjo);
+  font-weight:700;
+  font-size:var(--fs-h1);
+  letter-spacing:.01em;
+  color:var(--ink);
+  margin:0;
+}
+
+/* ---------- section frame ---------- */
+.section{
+  padding:78px 20px;
+  text-align:center;
+  position:relative;
+}
+.section-head{margin-bottom:34px;}
+.section-head .kicker{display:block;margin-bottom:14px;}
+
+/* ---------- reveal on scroll ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease;}
+.reveal.in{opacity:1;transform:none;}
+
+/* ---------- thread divider (signature) ---------- */
+.thread{
+  height:96px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:0;
+}
+.thread .line{width:1px;height:34px;background:linear-gradient(var(--line-strong),var(--sage-soft));}
+.thread .node{
+  width:7px;height:7px;border-radius:50%;
+  border:1px solid var(--sage);
+  transform:rotate(45deg);
+  margin:7px 0;
+}
+
+/* ---------- image placeholder ---------- */
+.ph{
+  position:relative;
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,.35) 0 2px, transparent 2px 26px),
+    linear-gradient(140deg,#E9E2D4 0%,#DED5C4 55%,#E6DFD0 100%);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:#A79E8B;
+  overflow:hidden;
+}
+.ph::after{
+  content:"";
+  position:absolute;inset:9px;
+  border:1px dashed rgba(150,140,120,.5);
+  border-radius:8px;
+  pointer-events:none;
+}
+.ph svg{width:30px;height:30px;opacity:.6;}
+.ph-label{
+  font-family:var(--num);
+  font-size:var(--fs-label);
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+/* ================= HERO ================= */
+.hero{
+  position:relative;
+  height:100svh;
+  min-height:640px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  padding:0;
+}
+.hero .ph{
+  position:absolute;inset:0;
+  color:#B9AF9B;
+}
+.hero .ph::after{border-color:rgba(255,255,255,.28);}
+.hero-slides{position:absolute;inset:0;}
+.hero-photo{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;object-position:center 32%;
+  opacity:0;transition:opacity 1.8s ease-in-out;
+}
+.hero-photo.active{opacity:1;}
+.hero .scrim{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(40,36,28,.42) 0%,rgba(40,36,28,.05) 34%,rgba(40,36,28,.12) 62%,rgba(40,36,28,.66) 100%);
+}
+.hero-top{position:relative;padding:38px 20px 0;}
+.hero-tagline{
+  display:flex;flex-direction:column;gap:28px;
+  color:rgba(255,255,255,.9);
+  font-family:'White Angelica',var(--serif);
+  letter-spacing:.02em;
+  font-size:var(--fs-display);
+  font-weight:400;
+  line-height:.9;
+  margin-bottom:24px;
+}
+.hero-tagline span{align-self:center;white-space:nowrap;}
+.hero-date{
+  font-family:var(--num);
+  font-size:var(--fs-lead);
+  letter-spacing:.18em;
+  margin-top:14px;
+  color:rgba(255,255,255,.94);
+}
+.hero-bottom{position:relative;padding:0 20px 40px;}
+.hero-info{
+  font-size:var(--fs-sm);
+  letter-spacing:.04em;
+  color:rgba(255,255,255,.92);
+  margin-bottom:22px;
+}
+.hero-info strong{font-weight:600;}
+.dday-pill{
+  display:inline-block;
+  font-family:var(--num);
+  font-size:var(--fs-lead);
+  letter-spacing:.14em;
+  color:rgba(255,255,255,.95);
+}
+.scroll-ind{
+  position:relative;
+  margin:26px auto 0;
+  width:1px;height:44px;
+  background:linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,0));
+  overflow:hidden;
+}
+.scroll-ind::after{
+  content:"";position:absolute;top:0;left:0;width:1px;height:14px;
+  background:#fff;animation:scrolldrop 2.1s ease-in-out infinite;
+}
+@keyframes scrolldrop{0%{transform:translateY(-14px);opacity:0;}40%{opacity:1;}100%{transform:translateY(44px);opacity:0;}}
+
+/* today banner */
+.today-banner{
+  display:none;
+  background:var(--sage-deep);color:#fff;
+  text-align:center;padding:12px;font-size:var(--fs-sm);letter-spacing:.04em;
+  position:sticky;top:0;z-index:40;
+}
+
+/* ================= GREETING ================= */
+.greeting{background:var(--paper);}
+.greeting p{
+  font-family:var(--myeongjo);
+  font-size:var(--fs-lead);
+  line-height:2.25;
+  color:#4A473F;
+  margin:0 auto;
+  max-width:24em;
+  word-break:keep-all;
+}
+.greeting .mark{color:var(--sage);font-size:var(--fs-h2);font-family:var(--serif);}
+
+/* ================= COUPLE ================= */
+.couple{background:var(--paper-2);}
+.couple-grid{display:flex;gap:16px;justify-content:center;margin-top:6px;}
+.person{flex:1;max-width:180px;}
+.person .avatar{
+  width:100%;height:210px;border-radius:14px;margin:0 auto 16px;
+  border:1px solid var(--line-strong);
+}
+.person .role{ font-family:'Arsenal SC','Poppins',sans-serif; font-style:normal; color:var(--sage); font-size:var(--fs-h2); margin-bottom:12px;}
+.person .name{font-family:var(--myeongjo);font-weight:700;font-size:var(--fs-h2);}
+.person .parents{font-size:var(--fs-caption);color:var(--ink-soft);margin-top:8px;line-height:1.7;}
+.person .parents b{font-weight:600;color:#5C584E;}
+.person .parents .of{color:var(--sage-soft);}
+
+/* ================= COUNTDOWN & CALENDAR ================= */
+.count{background:var(--paper);}
+.cd-wrap{display:flex;justify-content:center;gap:10px;margin:4px 0 30px;}
+.cd-box{min-width:66px;}
+.cd-num{
+  font-family:var(--num);font-weight:600;font-size:var(--fs-xxl);line-height:1;color:var(--sage-deep);
+  font-variant-numeric:tabular-nums;
+}
+.cd-lbl{font-family:var(--num);font-size:var(--fs-label);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-top:9px;}
+.cd-colon{font-family:var(--num);font-size:var(--fs-xl);color:var(--sage-soft);align-self:flex-start;margin-top:2px;}
+.cd-sentence{font-family:var(--num);color:#4A473F;font-size:var(--fs-body);margin-bottom:34px;}
+.cd-sentence b{color:var(--sage-deep);}
+
+.cal{
+  background:var(--card);border:0;border-radius:var(--radius);
+  padding:30px 22px;box-shadow:var(--shadow);width:100%;margin:0 auto;
+}
+.cal-title{font-family:var(--num);font-size:var(--fs-h2);letter-spacing:.1em;margin-bottom:22px;color:var(--ink);}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px 0;}
+.cal-grid span{
+  font-family:var(--num);
+  font-size:var(--fs-body);padding:8px 0;position:relative;color:var(--ink);
+  display:flex;align-items:center;justify-content:center;height:46px;
+}
+.cal-grid .dow{font-size:var(--fs-label);letter-spacing:.06em;color:var(--ink-soft);font-weight:600;height:30px;}
+.cal-grid .sun{color:var(--blush);}
+.cal-grid .empty{color:transparent;}
+.cal-grid .today-cell{
+  color:#fff;font-weight:700;isolation:isolate;
+}
+.cal-grid .today-cell::before{
+  content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:42px;height:42px;border-radius:50%;
+  background:var(--sage);z-index:-1;box-shadow:0 6px 14px -6px var(--sage-deep);
+}
+.cal-note{font-family:var(--num);margin-top:22px;font-size:var(--fs-sm);color:var(--ink-soft);letter-spacing:.04em;}
+.cal-note b{color:var(--sage-deep);font-weight:600;}
+
+/* ================= WEDDING INFO ================= */
+.winfo{background:var(--paper-2);}
+.info-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+  box-shadow:var(--shadow);overflow:hidden;text-align:left;
+}
+.info-card .cover{height:150px;color:#B9AF9B;}
+.info-body{padding:26px 24px 24px;}
+.info-row{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);}
+.info-row:last-of-type{border-bottom:0;}
+.info-row .k{font-size:var(--fs-caption);letter-spacing:.16em;text-transform:uppercase;color:var(--sage-soft);font-weight:600;}
+.info-row .v{font-family:var(--num);font-size:var(--fs-body);color:var(--ink);text-align:right;font-weight:500;}
+.info-row .v small{display:block;color:var(--ink-soft);font-weight:400;font-size:var(--fs-caption);margin-top:2px;}
+.info-actions{display:flex;gap:10px;margin-top:22px;}
+
+/* ================= BUTTONS ================= */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:48px;padding:0 18px;border-radius:12px;
+  font-size:var(--fs-sm);font-weight:600;letter-spacing:.02em;
+  border:1px solid var(--line-strong);background:var(--card);color:var(--ink);
+  transition:transform .12s ease,background .2s ease,border-color .2s ease;
+  flex:1;
+}
+.btn:active{transform:scale(.97);}
+.btn.solid{background:var(--sage);border-color:var(--sage);color:#fff;}
+.btn.solid:active{background:var(--sage-deep);}
+.btn.ghost{background:transparent;}
+.btn svg{width:17px;height:17px;}
+
+/* ================= GALLERY ================= */
+.gallery{background:var(--paper-2);overflow:hidden;}
+.g-scroll{
+  display:flex;align-items:flex-end;gap:12px;
+  overflow-x:auto;overflow-y:hidden;
+  margin:0 -20px;padding:16px 20px 6px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+.g-scroll::-webkit-scrollbar{display:none;}
+.g-item{
+  flex:0 0 auto;border-radius:12px;cursor:pointer;
+  transform-origin:bottom center;
+  opacity:.5;filter:saturate(.92);transform:scale(.92);
+  transition:transform .55s cubic-bezier(.22,.61,.36,1),opacity .55s ease,filter .55s ease,box-shadow .55s ease;
+}
+.g-item.focus{opacity:1;transform:scale(1);filter:none;box-shadow:0 16px 34px -18px rgba(60,54,40,.5);}
+.g-hint{margin-top:20px;font-size:var(--fs-caption);color:var(--ink-soft);letter-spacing:.04em;}
+
+/* ================= DIRECTIONS ================= */
+.dir{background:var(--paper);}
+.map-ph{height:220px;border-radius:var(--radius);color:#B9AF9B;box-shadow:var(--shadow);border:1px solid var(--line);}
+.dir-addr{
+  margin:22px 0 6px;font-family:var(--myeongjo);font-size:var(--fs-lead);
+  display:inline-flex;align-items:center;justify-content:center;gap:4px;
+}
+.copy-icon{
+  flex:none;width:40px;height:40px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:none;border:0;color:var(--sage);border-radius:9px;
+  transition:background .15s ease;
+}
+.copy-icon svg{width:18px;height:18px;}
+.copy-icon:active{background:var(--paper-2);}
+.copy-inline{
+  background:none;border:0;color:var(--sage);font-size:var(--fs-caption);font-weight:600;
+  letter-spacing:.08em;text-decoration:underline;text-underline-offset:3px;min-height:44px;padding:0 6px;
+}
+.addr-copy-btn{width:100%;flex:none;margin:22px 0 30px;}
+.transit{text-align:left;border-top:1px solid var(--line);padding-top:24px;}
+.transit .t-row{display:flex;gap:12px;padding:11px 0;font-size:var(--fs-sm);line-height:1.6;}
+.transit .t-ic{
+  flex:none;width:30px;height:30px;border-radius:9px;background:var(--paper);
+  border:1px solid var(--line-strong);display:flex;align-items:center;justify-content:center;
+  font-size:var(--fs-label);font-weight:700;color:var(--sage);
+}
+.transit .t-row b{display:block;font-size:var(--fs-label);letter-spacing:.12em;color:var(--sage-soft);text-transform:uppercase;margin-bottom:2px;}
+.transit .t-row span{color:#54504780;}
+.transit .t-txt{color:#514D44;}
+
+/* ================= FAQ ================= */
+.faq{background:var(--paper);}
+.acc{text-align:left;border-top:1px solid var(--line);}
+.acc-item{border-bottom:1px solid var(--line);}
+.acc-q{
+  width:100%;background:none;border:0;padding:20px 4px;text-align:left;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+  font-size:var(--fs-body);font-weight:600;color:var(--ink);font-family:var(--sans);
+}
+.acc-q .plus{flex:none;width:16px;height:16px;position:relative;transition:transform .3s ease;}
+.acc-q .plus::before,.acc-q .plus::after{content:"";position:absolute;background:var(--sage);border-radius:2px;}
+.acc-q .plus::before{top:7.25px;left:0;width:16px;height:1.5px;}
+.acc-q .plus::after{left:7.25px;top:0;width:1.5px;height:16px;transition:opacity .3s ease;}
+.acc-item.open .plus{transform:rotate(180deg);}
+.acc-item.open .plus::after{opacity:0;}
+.acc-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.acc-a .inner{padding:0 4px 20px;color:#57534A;font-size:var(--fs-body);line-height:1.8;word-break:keep-all;}
+
+/* ================= RSVP ================= */
+.rsvp{background:var(--paper-2);}
+.form{text-align:left;width:100%;margin:0 auto;}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:var(--fs-caption);font-weight:600;letter-spacing:.1em;color:var(--sage-soft);text-transform:uppercase;margin-bottom:9px;}
+.field input,.field select,.field textarea{
+  width:100%;padding:14px 15px;border:1px solid var(--line-strong);border-radius:12px;
+  background:var(--card);font-family:inherit;font-size:var(--fs-body);color:var(--ink);
+  -webkit-appearance:none;appearance:none;
+}
+.field textarea{resize:vertical;min-height:84px;line-height:1.7;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--sage-soft);outline-offset:1px;border-color:var(--sage);}
+.seg{display:flex;gap:8px;}
+.seg label{flex:1;margin:0;}
+.seg input{position:absolute;opacity:0;width:0;height:0;}
+.seg .opt{
+  display:flex;align-items:center;justify-content:center;min-height:48px;
+  border:1px solid var(--line-strong);border-radius:12px;background:var(--card);
+  font-size:var(--fs-sm);font-weight:600;color:var(--ink-soft);text-transform:none;letter-spacing:0;transition:all .18s ease;
+}
+.seg input:checked + .opt{background:var(--sage);border-color:var(--sage);color:#fff;}
+.seg input:focus-visible + .opt{outline:2px solid var(--sage-soft);outline-offset:2px;}
+.form .btn.solid{width:100%;margin-top:8px;}
+.rsvp-note{font-size:var(--fs-caption);color:var(--ink-soft);margin-top:16px;line-height:1.7;}
+.rsvp-lead{font-family:var(--myeongjo);color:#4A473F;font-size:var(--fs-lead);line-height:1.9;margin:0 0 26px;word-break:keep-all;}
+.rsvp-trigger{flex:none;width:100%;max-width:320px;margin:0 auto;}
+.rsvp-done{display:none;text-align:center;padding:20px 0;}
+.rsvp-done .check{
+  width:56px;height:56px;border-radius:50%;background:var(--sage);color:#fff;
+  display:flex;align-items:center;justify-content:center;margin:0 auto 18px;font-size:var(--fs-h1);
+}
+.rsvp-done h4{font-family:var(--myeongjo);font-size:var(--fs-h2);margin:0 0 8px;}
+.rsvp-done p{color:var(--ink-soft);font-size:var(--fs-sm);margin:0;}
+
+/* ================= ACCOUNTS ================= */
+.gift{background:var(--paper-2);}
+.gift-lead{font-family:var(--myeongjo);color:#4A473F;font-size:var(--fs-body);line-height:1.9;margin-bottom:26px;word-break:keep-all;}
+.acc-acct .acc-q{font-family:var(--myeongjo);font-weight:700;}
+.acct{padding:4px 4px 8px;}
+.acct-row{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:9px;text-align:left;
+}
+.acct-row .bank{font-size:var(--fs-label);color:var(--sage-soft);letter-spacing:.08em;font-weight:600;margin-bottom:3px;}
+.acct-row .no{font-family:var(--num);font-size:var(--fs-body);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;letter-spacing:.01em;}
+.acct-row .owner{font-size:var(--fs-caption);color:var(--ink-soft);margin-top:3px;}
+.copy-btn{
+  flex:none;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--sage);
+  background:transparent;color:var(--sage);font-size:var(--fs-caption);font-weight:600;transition:all .15s ease;
+}
+.copy-btn:active{background:var(--sage);color:#fff;}
+
+/* ================= CONTACT ================= */
+.contact{background:var(--paper-2);}
+.contact-grid{display:flex;flex-direction:column;gap:20px;}
+.contact-side{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);}
+.contact-side .who{font-family:var(--myeongjo);font-weight:700;font-size:var(--fs-body);margin-bottom:14px;}
+.contact-side .who span{color:var(--sage-soft);font-size:var(--fs-caption);font-weight:400;margin-left:8px;font-family:var(--sans);}
+.contact-btns{display:flex;gap:10px;}
+
+/* ================= SHARE ================= */
+.share{background:var(--paper);}
+.share-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:340px;margin:0 auto;}
+.share-grid .btn{flex:none;}
+.qr-ph{width:120px;height:120px;margin:26px auto 0;border-radius:14px;color:#B9AF9B;border:1px solid var(--line);}
+
+/* ================= FOOTER ================= */
+.foot{background:var(--sage-deep);color:#EDEAE0;text-align:center;padding:60px 20px 54px;}
+.foot .amp{font-family:'Arsenal SC','Poppins',sans-serif;font-style:normal;color:#D9C7C1;font-size:var(--fs-h2);}
+.foot .names{font-family:var(--serif);font-size:var(--fs-xl);letter-spacing:.04em;margin:8px 0 18px;}
+.foot p{font-size:var(--fs-sm);color:#C7C6B7;line-height:1.9;margin:0;letter-spacing:.03em;word-break:keep-all;}
+.foot .copy{font-family:var(--num);margin-top:26px;font-size:var(--fs-label);letter-spacing:.14em;text-transform:uppercase;color:#A99A82;}
+
+/* ================= FLOATING ================= */
+.fab{
+  position:fixed;z-index:50;width:46px;height:46px;border-radius:50%;
+  background:rgba(255,255,255,.92);border:1px solid var(--line-strong);
+  box-shadow:0 10px 26px -12px rgba(60,54,40,.5);backdrop-filter:blur(6px);
+  display:flex;align-items:center;justify-content:center;color:var(--sage-deep);
+  transition:opacity .3s ease,transform .3s ease;
+}
+.fab svg{width:20px;height:20px;}
+.fab.bgm{
+  bottom:calc(24px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.55);
+  backdrop-filter:blur(14px) saturate(180%);
+  -webkit-backdrop-filter:blur(14px) saturate(180%);
+  box-shadow:0 8px 24px -8px rgba(60,54,40,.35), inset 0 1px 1px rgba(255,255,255,.65), inset 0 -1px 2px rgba(255,255,255,.25);
+}
+.fab.top{
+  bottom:calc(80px + env(safe-area-inset-bottom));
+  opacity:0;pointer-events:none;transform:translateY(10px);
+  background:rgba(255,255,255,.5);
+  border:1px solid rgba(255,255,255,.55);
+  backdrop-filter:blur(14px) saturate(180%);
+  -webkit-backdrop-filter:blur(14px) saturate(180%);
+  box-shadow:0 8px 24px -8px rgba(60,54,40,.35), inset 0 1px 1px rgba(255,255,255,.65), inset 0 -1px 2px rgba(255,255,255,.25);
+}
+.fab.top.show{opacity:1;pointer-events:auto;transform:none;}
+.bgm.playing .ic-play{display:none;}
+.bgm .ic-pause{display:none;}
+.bgm.playing .ic-pause{display:block;}
+@media(min-width:520px){
+  .fab{left:50%;}
+  .fab.bgm{margin-left:calc(var(--frame)/2 - 62px);}
+  .fab.top{margin-left:calc(var(--frame)/2 - 62px);}
+}
+
+/* ================= BOTTOM SHEET ================= */
+.sheet-scrim{
+  position:fixed;inset:0;z-index:75;background:rgba(30,26,18,.5);
+  opacity:0;pointer-events:none;transition:opacity .32s ease;
+  -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+}
+.sheet-scrim.open{opacity:1;pointer-events:auto;}
+.sheet{
+  position:fixed;z-index:76;left:50%;bottom:0;transform:translate(-50%,100%);
+  width:100%;max-width:var(--frame);
+  background:var(--paper);border-radius:26px 26px 0 0;
+  box-shadow:0 -22px 60px -24px rgba(40,34,22,.5);
+  padding:10px 22px calc(26px + env(safe-area-inset-bottom));
+  transition:transform .4s cubic-bezier(.22,.61,.36,1);
+  text-align:center;max-height:90vh;overflow-y:auto;
+}
+.sheet.open{transform:translate(-50%,0);}
+.sheet-handle{
+  display:block;width:42px;height:4px;border-radius:2px;border:0;padding:0;
+  background:var(--line-strong);margin:6px auto 22px;cursor:pointer;
+}
+.sheet-title{font-family:var(--myeongjo);font-weight:700;font-size:var(--fs-h2);margin:0 0 12px;color:var(--ink);}
+.sheet-desc{font-size:var(--fs-body);color:var(--ink-soft);line-height:1.75;margin:0 0 24px;word-break:keep-all;}
+.sheet-info{
+  text-align:left;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:4px 16px;margin-bottom:24px;
+}
+.si-row{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);font-size:var(--fs-sm);color:var(--ink);line-height:1.5;}
+.si-row:last-child{border-bottom:0;}
+.si-row svg{flex:none;width:19px;height:19px;color:var(--sage);}
+.sheet-actions{display:flex;gap:10px;}
+.sheet .form{margin-top:4px;}
+
+/* ================= TOAST ================= */
+.toast{
+  position:fixed;left:50%;bottom:calc(40px + env(safe-area-inset-bottom));transform:translate(-50%,20px);
+  background:rgba(51,49,43,.95);color:#fff;padding:12px 22px;border-radius:999px;
+  font-size:var(--fs-sm);letter-spacing:.02em;z-index:90;opacity:0;pointer-events:none;
+  transition:opacity .3s ease,transform .3s ease;white-space:nowrap;
+}
+.toast.show{opacity:1;transform:translate(-50%,0);}
+
+/* ================= LIGHTBOX ================= */
+.lightbox{
+  position:fixed;inset:0;z-index:80;background:rgba(28,25,20,.94);
+  display:none;align-items:center;justify-content:center;flex-direction:column;
+}
+.lightbox.open{display:flex;}
+.lb-stage{width:86%;max-width:420px;height:64vh;border-radius:14px;color:#8f8778;}
+.lb-close{position:absolute;top:calc(18px + env(safe-area-inset-top));right:20px;width:44px;height:44px;background:none;border:0;color:#fff;font-size:var(--fs-h1);line-height:1;}
+.lb-nav{display:flex;gap:40px;margin-top:24px;}
+.lb-nav button{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;font-size:var(--fs-h2);}
+.lb-count{font-family:var(--num);color:rgba(255,255,255,.7);font-size:var(--fs-caption);letter-spacing:.2em;margin-top:18px;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important;}
+  .reveal{opacity:1;transform:none;}
+}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+
+  <div class="today-banner" id="todayBanner">오늘 저희 결혼합니다 🎉</div>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <!-- 대표 웨딩 사진 (교체 가능): 3장이 페이드로 전환됩니다. src만 바꾸면 됩니다 -->
+    <div class="hero-slides" aria-hidden="true">
+      <img class="hero-photo active" src="hero1.jpg" alt="신랑 신부 웨딩 사진" />
+      <img class="hero-photo" src="hero2.jpg" alt="" />
+      <img class="hero-photo" src="hero3.jpg" alt="" />
+    </div>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <div class="hero-top">
+      <div class="hero-date">2026 · 10 · 18 &nbsp;SUN</div>
+      <div class="hero-info"><strong>낮 12시 30분</strong> · 그랜드컨벤션 그레이스홀</div>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-tagline">
+        <span>Our story</span>
+        <span>begins</span>
+      </div>
+      <div class="dday-pill" id="heroDday">D-DAY</div>
+      <div class="scroll-ind" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <!-- ===================== GREETING ===================== -->
+  <section class="section greeting reveal">
+    <div class="section-head"><span class="kicker">Invitation</span></div>
+    <p>
+      서로 마주보며 걸어온 두 사람이<br>
+      이제 같은 곳을 바라보려 합니다.<br><br>
+      저희 두 사람의 새로운 시작을<br>
+      귀한 걸음으로 축복해 주시면<br>
+      더없는 기쁨으로 간직하겠습니다.
+    </p>
+  </section>
+
+  <!-- ===================== COUPLE ===================== -->
+  <section class="section couple reveal">
+    <div class="couple-grid">
+      <div class="person">
+        <div class="role">Groom</div>
+        <div class="ph avatar" aria-hidden="true"></div>
+        <div class="name">김도현</div>
+        <div class="parents"><span class="of">김정우 · 박미경</span> 의 <b>장남</b></div>
+      </div>
+      <div class="person">
+        <div class="role">Bride</div>
+        <div class="ph avatar" aria-hidden="true"></div>
+        <div class="name">이서연</div>
+        <div class="parents"><span class="of">이성호 · 최은주</span> 의 <b>차녀</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COUNTDOWN & CALENDAR ===================== -->
+  <section class="section count reveal">
+    <div class="section-head">
+      <span class="kicker">Countdown</span>
+      <h2 class="title-ko">예식까지</h2>
+    </div>
+    <div class="cd-wrap" id="countdown" role="timer" aria-live="off">
+      <div class="cd-box"><div class="cd-num" id="cdDay">--</div><div class="cd-lbl">Days</div></div>
+      <div class="cd-colon">:</div>
+      <div class="cd-box"><div class="cd-num" id="cdHour">--</div><div class="cd-lbl">Hours</div></div>
+      <div class="cd-colon">:</div>
+      <div class="cd-box"><div class="cd-num" id="cdMin">--</div><div class="cd-lbl">Min</div></div>
+      <div class="cd-colon">:</div>
+      <div class="cd-box"><div class="cd-num" id="cdSec">--</div><div class="cd-lbl">Sec</div></div>
+    </div>
+    <div class="cd-sentence" id="cdSentence">도현, 서연의 결혼식이 <b>D-DAY</b> 남았습니다.</div>
+
+    <div class="cal">
+      <div class="cal-title">2026년 10월</div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="cal-note"><b>10월 18일 일요일</b> 낮 12시 30분</div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="section gallery reveal">
+    <div class="section-head">
+      <span class="kicker">Gallery</span>
+      <h2 class="title-ko">우리의 순간</h2>
+    </div>
+    <div class="g-scroll" id="galleryGrid"></div>
+    <div class="g-hint">3초마다 다음 사진으로 · 탭하면 크게 볼 수 있어요</div>
+  </section>
+
+  <!-- ===================== DIRECTIONS ===================== -->
+  <section class="section dir reveal">
+    <div class="section-head">
+      <span class="kicker">Location</span>
+      <h2 class="title-ko">오시는 길</h2>
+    </div>
+    <div class="ph map-ph" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span class="ph-label">네이버 지도 영역</span>
+    </div>
+    <div class="dir-addr">
+      <span>서울 강남구 테헤란로 123, 강남웨딩빌딩 5층</span>
+      <button class="copy-icon" data-copy="서울 강남구 테헤란로 123 강남웨딩빌딩 5층 그레이스홀" data-label="주소가 복사되었습니다" aria-label="주소 복사">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+      </button>
+    </div>
+
+    <button class="btn solid addr-copy-btn" data-copy="서울 강남구 테헤란로 123 강남웨딩빌딩 5층 그레이스홀" data-label="주소가 복사되었습니다">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+      주소 복사하기
+    </button>
+
+    <div class="transit">
+      <div class="t-row"><span class="t-ic">P</span><div class="t-txt"><b>주차 안내</b>건물 지하 1~3층 주차장 이용 (2시간 무료), 만차 시 인근 공영주차장 안내</div></div>
+      <div class="t-row"><span class="t-ic">🚇</span><div class="t-txt"><b>지하철</b>2호선 강남역 4번 출구에서 도보 5분</div></div>
+      <div class="t-row"><span class="t-ic">🚌</span><div class="t-txt"><b>버스</b>강남역 정류장 하차 · 간선 146, 341 / 지선 4319</div></div>
+    </div>
+  </section>
+
+  <!-- ===================== RSVP ===================== -->
+  <!-- 참석 의사 전달(RSVP) 임시 숨김: 사용하려면 아래 style="display:none" 제거 + JS의 자동노출 주석 해제 -->
+  <section class="section rsvp reveal" style="display:none">
+    <div class="section-head">
+      <span class="kicker">R.S.V.P</span>
+      <h2 class="title-ko">참석 여부 전달</h2>
+    </div>
+    <p class="rsvp-lead">신랑, 신부에게 참석의사를<br>미리 전달해 주세요.</p>
+    <button class="btn solid rsvp-trigger" id="rsvpTrigger">참석 의사 전달하기</button>
+  </section>
+
+  <!-- ===================== GIFT / ACCOUNTS ===================== -->
+  <section class="section gift reveal">
+    <div class="section-head">
+      <span class="kicker">With Heart</span>
+      <h2 class="title-ko">마음 전하실 곳</h2>
+    </div>
+    <p class="gift-lead">참석이 어려우신 분들을 위해<br>계좌번호를 안내드립니다.<br>따뜻한 마음 감사히 간직하겠습니다.</p>
+    <div class="acc acc-acct" id="giftAcc">
+      <div class="acc-item">
+        <button class="acc-q">신랑측 계좌번호<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner acct">
+          <div class="acct-row">
+            <div><div class="bank">국민은행</div><div class="no">123456-01-123456</div><div class="owner">김도현</div></div>
+            <button class="copy-btn" data-copy="123456-01-123456" data-label="계좌번호가 복사되었습니다">복사</button>
+          </div>
+          <div class="acct-row">
+            <div><div class="bank">국민은행 · 부(父)</div><div class="no">123-45-6789-012</div><div class="owner">김정우</div></div>
+            <button class="copy-btn" data-copy="123-45-6789-012" data-label="계좌번호가 복사되었습니다">복사</button>
+          </div>
+        </div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">신부측 계좌번호<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner acct">
+          <div class="acct-row">
+            <div><div class="bank">신한은행</div><div class="no">110-234-567890</div><div class="owner">이서연</div></div>
+            <button class="copy-btn" data-copy="110-234-567890" data-label="계좌번호가 복사되었습니다">복사</button>
+          </div>
+          <div class="acct-row">
+            <div><div class="bank">신한은행 · 모(母)</div><div class="no">110-987-654321</div><div class="owner">최은주</div></div>
+            <button class="copy-btn" data-copy="110-987-654321" data-label="계좌번호가 복사되었습니다">복사</button>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section faq reveal">
+    <div class="section-head">
+      <span class="kicker">FAQ</span>
+      <h2 class="title-ko">자주 묻는 질문</h2>
+    </div>
+    <div class="acc" id="faqAcc">
+      <div class="acc-item">
+        <button class="acc-q">주차는 가능한가요?<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner">건물 지하 1~3층 주차장을 2시간 무료로 이용하실 수 있습니다. 주차 공간이 협소하니 가급적 대중교통 이용을 권해드립니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">식권은 어디에서 받나요?<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner">5층 연회장 입구 안내데스크에서 방명록 작성 후 받으실 수 있습니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">폐백이 있나요?<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner">양가 가족과 함께하는 간소한 폐백이 예식 직후 별도 폐백실에서 진행됩니다.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">아이와 함께 참석 가능한가요?<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner">물론입니다. 유아용 의자가 필요하시면 안내데스크에 미리 말씀해 주세요.</div></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-q">축의금은 어디로 전달하면 되나요?<span class="plus"></span></button>
+        <div class="acc-a"><div class="inner">예식장 입구 신랑측·신부측 접수대에서 전달하실 수 있으며, 참석이 어려우신 분은 '마음 전하실 곳'의 계좌로도 보내주실 수 있습니다.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="foot reveal">
+    <div class="amp">Thank you</div>
+    <div class="names">도현 &amp; 서연</div>
+    <p>귀한 시간 내어 축복해 주시는<br>모든 분들께 진심으로 감사드립니다.</p>
+    <div class="copy">2026 · Dohyeon &amp; Seoyeon</div>
+  </footer>
+
+</div>
+
+<!-- floating buttons -->
+<button class="fab bgm" id="bgmBtn" aria-label="배경음악 재생/일시정지">
+  <svg class="ic-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+  <svg class="ic-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M16 9a5 5 0 0 1 0 6M19 7a8 8 0 0 1 0 10"/></svg>
+</button>
+<button class="fab top" id="topBtn" aria-label="맨 위로">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 15 6-6 6 6"/></svg>
+</button>
+
+<!-- audio: 실제 배포 시 src에 음원 파일 연결 (예: bgm.mp3) -->
+<audio id="bgmAudio" loop preload="none"></audio>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="사진 크게 보기">
+  <button class="lb-close" id="lbClose" aria-label="닫기">×</button>
+  <div class="ph lb-stage" id="lbStage"><span class="ph-label" id="lbLabel">사진 01</span></div>
+  <div class="lb-nav">
+    <button id="lbPrev" aria-label="이전 사진">‹</button>
+    <button id="lbNext" aria-label="다음 사진">›</button>
+  </div>
+  <div class="lb-count" id="lbCount">01 / 12</div>
+</div>
+
+<!-- ===================== RSVP BOTTOM SHEET ===================== -->
+<div class="sheet-scrim" id="sheetScrim"></div>
+
+<!-- 안내 시트 -->
+<div class="sheet" id="rsvpIntro" role="dialog" aria-modal="true" aria-labelledby="introTitle">
+  <button class="sheet-handle" id="introHandle" aria-label="닫기"></button>
+  <h3 class="sheet-title" id="introTitle">참석 의사 전달</h3>
+  <p class="sheet-desc">신랑, 신부에게 참석의사를<br>미리 전달할 수 있어요.</p>
+  <div class="sheet-info">
+    <div class="si-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v3M16 3v3"/></svg>
+      <span>2026년 10월 18일 일요일 낮 12시 30분</span>
+    </div>
+    <div class="si-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V6l8-3 8 3v15"/><path d="M9 21v-5h6v5M9 9h.01M15 9h.01M9 12.5h.01M15 12.5h.01"/></svg>
+      <span>그랜드컨벤션 5층 그레이스홀</span>
+    </div>
+    <div class="si-row">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span>서울 강남구 테헤란로 123</span>
+    </div>
+  </div>
+  <div class="sheet-actions">
+    <button class="btn ghost" id="rsvpDismiss">오늘 하루 보지 않기</button>
+    <button class="btn solid" id="rsvpOpen">참석의사 전달하기</button>
+  </div>
+</div>
+
+<!-- 입력 폼 시트 -->
+<div class="sheet" id="rsvpFormSheet" role="dialog" aria-modal="true" aria-labelledby="formTitle">
+  <button class="sheet-handle" id="formHandle" aria-label="닫기"></button>
+  <h3 class="sheet-title" id="formTitle">참석 의사 전달</h3>
+  <form class="form" id="rsvpForm" novalidate>
+    <div class="field">
+      <label for="rsvpName">이름</label>
+      <input type="text" id="rsvpName" placeholder="성함을 입력해 주세요" required />
+    </div>
+    <div class="field">
+      <label>어느 분의 하객이신가요?</label>
+      <div class="seg">
+        <label><input type="radio" name="side" value="신랑측" required /><span class="opt">신랑측</span></label>
+        <label><input type="radio" name="side" value="신부측" /><span class="opt">신부측</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label>참석 여부</label>
+      <div class="seg">
+        <label><input type="radio" name="attend" value="참석" required /><span class="opt">참석</span></label>
+        <label><input type="radio" name="attend" value="미참석" /><span class="opt">미참석</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label for="rsvpCount">동행 인원 (본인 포함)</label>
+      <select id="rsvpCount">
+        <option>1명</option><option>2명</option><option>3명</option><option>4명</option><option>5명 이상</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>식사 여부</label>
+      <div class="seg">
+        <label><input type="radio" name="meal" value="예정" /><span class="opt">식사함</span></label>
+        <label><input type="radio" name="meal" value="안함" /><span class="opt">안 함</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label for="rsvpMsg">전달 사항 (선택)</label>
+      <textarea id="rsvpMsg" placeholder="전하실 말씀이 있다면 남겨주세요"></textarea>
+    </div>
+    <button type="submit" class="btn solid">참석 여부 전달하기</button>
+    <p class="rsvp-note">※ 입력하신 정보는 예식 준비를 위한 용도로만 사용됩니다.</p>
+  </form>
+  <div class="rsvp-done" id="rsvpDone">
+    <div class="check">✓</div>
+    <h4>소중한 마음 감사합니다</h4>
+    <p>참석 여부가 전달되었습니다.<br>귀한 걸음으로 축복해 주세요.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var WEDDING = new Date(2026, 9, 18, 12, 30, 0); // 2026-10-18 12:30
+  var GALLERY_COUNT = 12;
+
+  /* ---------- reveal on scroll ---------- */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* ---------- hero: 3장 크로스페이드 ---------- */
+  (function(){
+    var slides=document.querySelectorAll('.hero-photo');
+    if(slides.length<2)return;
+    var i=0;
+    setInterval(function(){
+      slides[i].classList.remove('active');
+      i=(i+1)%slides.length;
+      slides[i].classList.add('active');
+    },4200);
+  })();
+
+  /* ---------- countdown + D-day ---------- */
+  var pad = function(n){ return (n<10?'0':'')+n; };
+  function tick(){
+    var now = new Date();
+    var diff = WEDDING - now;
+    var dEl = document.getElementById('cdDay'),
+        hEl = document.getElementById('cdHour'),
+        mEl = document.getElementById('cdMin'),
+        sEl = document.getElementById('cdSec');
+    if(diff <= 0){
+      dEl.textContent='0';hEl.textContent='00';mEl.textContent='00';sEl.textContent='00';
+      document.getElementById('cdSentence').innerHTML='오늘 <b>도현, 서연</b>의 결혼식입니다.';
+      return;
+    }
+    var d = Math.floor(diff/86400000);
+    var h = Math.floor(diff%86400000/3600000);
+    var m = Math.floor(diff%3600000/60000);
+    var s = Math.floor(diff%60000/1000);
+    dEl.textContent=d; hEl.textContent=pad(h); mEl.textContent=pad(m); sEl.textContent=pad(s);
+    var dday = Math.ceil(diff/86400000);
+    document.getElementById('heroDday').textContent = 'D-'+dday;
+    document.getElementById('cdSentence').innerHTML = '도현, 서연의 결혼식이 <b>D-'+dday+'</b> 남았습니다.';
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* ---------- today banner ---------- */
+  (function(){
+    var n=new Date();
+    if(n.getFullYear()===WEDDING.getFullYear()&&n.getMonth()===WEDDING.getMonth()&&n.getDate()===WEDDING.getDate()){
+      document.getElementById('todayBanner').style.display='block';
+    }
+  })();
+
+  /* ---------- calendar (Oct 2026) ---------- */
+  (function(){
+    var grid = document.getElementById('calGrid');
+    var dows=['일','월','화','수','목','금','토'];
+    dows.forEach(function(d,i){
+      var s=document.createElement('span');
+      s.textContent=d; s.className='dow'+(i===0?' sun':'');
+      grid.appendChild(s);
+    });
+    var first=new Date(2026,9,1).getDay();
+    var days=new Date(2026,10,0).getDate();
+    for(var i=0;i<first;i++){ var e=document.createElement('span'); e.className='empty'; e.textContent='.'; grid.appendChild(e); }
+    for(var day=1;day<=days;day++){
+      var c=document.createElement('span');
+      c.textContent=day;
+      var dow=new Date(2026,9,day).getDay();
+      if(dow===0) c.className='sun';
+      if(day===18){ c.className='today-cell'; }
+      grid.appendChild(c);
+    }
+  })();
+
+  /* ---------- gallery: 가로 스크롤 · 하단 정렬 · 3초 자동 포커싱 ---------- */
+  (function(){
+    var grid=document.getElementById('galleryGrid');
+    // 이미지 크기가 제각각인 상황을 재현 (실제 이미지로 교체 시 자연 비율 사용)
+    var heights=[260,210,300,240,280,200,320,250,290,220,270,240];
+    var ratios =[0.72,1.35,0.70,0.75,1.30,0.72,0.68,1.40,0.73,0.70,1.30,0.72];
+    var items=[];
+    for(var i=1;i<=GALLERY_COUNT;i++){
+      var h=heights[(i-1)%heights.length];
+      var w=Math.round(h*ratios[(i-1)%ratios.length]);
+      var d=document.createElement('div');
+      d.className='ph g-item';
+      d.style.height=h+'px'; d.style.width=w+'px';
+      d.setAttribute('role','button'); d.setAttribute('tabindex','0');
+      d.dataset.idx=i;
+      d.innerHTML='<span class="ph-label">사진 '+pad(i)+'</span>';
+      grid.appendChild(d); items.push(d);
+    }
+
+    function centerTo(idx,smooth){
+      var el=items[idx]; if(!el)return;
+      var left=el.offsetLeft-(grid.clientWidth-el.clientWidth)/2;
+      grid.scrollTo({left:Math.max(0,left),behavior:smooth?'smooth':'auto'});
+    }
+    function setFocus(idx){ items.forEach(function(el,k){ el.classList.toggle('focus',k===idx); }); }
+
+    var cur=0, timer=null, paused=false, resumeT=null;
+    function step(){ if(paused)return; cur=(cur+1)%items.length; setFocus(cur); centerTo(cur,true); }
+    function start(){ if(!timer) timer=setInterval(step,3000); }
+    function stop(){ clearInterval(timer); timer=null; }
+    setFocus(0);
+
+    // 화면에 보일 때만 자동 재생
+    var gio=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ centerTo(cur,false); start(); } else { stop(); } });
+    },{threshold:.3});
+    gio.observe(document.querySelector('.gallery'));
+
+    // 사용자가 만지면 잠시 멈추고 4초 뒤 재개
+    function pause(){ paused=true; clearTimeout(resumeT); resumeT=setTimeout(function(){ paused=false; },4000); }
+    grid.addEventListener('touchstart',pause,{passive:true});
+    grid.addEventListener('wheel',pause,{passive:true});
+    grid.addEventListener('mousedown',pause);
+
+    grid.addEventListener('click', function(e){
+      var t=e.target.closest('.g-item'); if(t) openLB(parseInt(t.dataset.idx,10));
+    });
+    grid.addEventListener('keydown', function(e){
+      if((e.key==='Enter'||e.key===' ')&&e.target.dataset.idx){ e.preventDefault(); openLB(parseInt(e.target.dataset.idx,10)); }
+    });
+  })();
+
+  /* ---------- lightbox ---------- */
+  var lb=document.getElementById('lightbox'), lbCur=1;
+  function renderLB(){
+    document.getElementById('lbLabel').textContent='사진 '+pad(lbCur);
+    document.getElementById('lbCount').textContent=pad(lbCur)+' / '+pad(GALLERY_COUNT);
+  }
+  function openLB(i){ lbCur=i; renderLB(); lb.classList.add('open'); }
+  function moveLB(dir){ lbCur=((lbCur-1+dir+GALLERY_COUNT)%GALLERY_COUNT)+1; renderLB(); }
+  document.getElementById('lbClose').onclick=function(){ lb.classList.remove('open'); };
+  document.getElementById('lbPrev').onclick=function(){ moveLB(-1); };
+  document.getElementById('lbNext').onclick=function(){ moveLB(1); };
+  lb.addEventListener('click', function(e){ if(e.target===lb) lb.classList.remove('open'); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape') lb.classList.remove('open');
+    if(e.key==='ArrowLeft') moveLB(-1);
+    if(e.key==='ArrowRight') moveLB(1);
+  });
+  // swipe
+  var tx=0;
+  lb.addEventListener('touchstart',function(e){ tx=e.touches[0].clientX; },{passive:true});
+  lb.addEventListener('touchend',function(e){
+    var dx=e.changedTouches[0].clientX-tx;
+    if(Math.abs(dx)>45) moveLB(dx<0?1:-1);
+  },{passive:true});
+
+  /* ---------- accordions ---------- */
+  document.querySelectorAll('.acc').forEach(function(acc){
+    acc.addEventListener('click', function(e){
+      var q=e.target.closest('.acc-q'); if(!q)return;
+      var item=q.parentElement;
+      var panel=item.querySelector('.acc-a');
+      var isOpen=item.classList.toggle('open');
+      panel.style.maxHeight = isOpen ? panel.scrollHeight+'px' : null;
+    });
+  });
+
+  /* ---------- toast ---------- */
+  var toast=document.getElementById('toast'), toastT;
+  function showToast(msg){
+    toast.textContent=msg; toast.classList.add('show');
+    clearTimeout(toastT); toastT=setTimeout(function(){ toast.classList.remove('show'); },1900);
+  }
+
+  /* ---------- copy ---------- */
+  function copyText(text, label){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ showToast(label); }, fallback);
+    } else fallback();
+    function fallback(){
+      var ta=document.createElement('textarea'); ta.value=text;
+      ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta);
+      ta.select(); try{ document.execCommand('copy'); showToast(label); }catch(_){ showToast('복사에 실패했습니다'); }
+      document.body.removeChild(ta);
+    }
+  }
+  document.addEventListener('click', function(e){
+    var b=e.target.closest('[data-copy]'); if(!b)return;
+    copyText(b.dataset.copy, b.dataset.label||'복사되었습니다');
+  });
+
+  /* ---------- nav / share (dummy) ---------- */
+  document.addEventListener('click', function(e){
+    var n=e.target.closest('[data-nav]');
+    if(n){ showToast(n.dataset.nav+' 길찾기 연결 (연동 예정)'); return; }
+    var s=e.target.closest('[data-share]');
+    if(s){
+      var t=s.dataset.share;
+      if(t==='qr'){ document.getElementById('qrPh').scrollIntoView({behavior:'smooth',block:'center'}); return; }
+      if(t==='sms' && navigator.share){ navigator.share({title:'도현 & 서연 결혼합니다', url:location.href}).catch(function(){}); return; }
+      showToast((t==='kakao'?'카카오톡':'문자')+' 공유 연결 (연동 예정)');
+    }
+  });
+
+  /* ---------- RSVP bottom sheet ---------- */
+  (function(){
+    var scrim=document.getElementById('sheetScrim');
+    var intro=document.getElementById('rsvpIntro');
+    var formSheet=document.getElementById('rsvpFormSheet');
+    var form=document.getElementById('rsvpForm');
+    var done=document.getElementById('rsvpDone');
+
+    function lock(v){ document.documentElement.style.overflow=v?'hidden':''; }
+    function openIntro(){ formSheet.classList.remove('open'); intro.classList.add('open'); scrim.classList.add('open'); lock(true); }
+    function openForm(){ intro.classList.remove('open'); formSheet.classList.add('open'); scrim.classList.add('open'); lock(true); }
+    function closeAll(){ intro.classList.remove('open'); formSheet.classList.remove('open'); scrim.classList.remove('open'); lock(false); }
+
+    document.getElementById('rsvpTrigger').addEventListener('click', openForm);
+    document.getElementById('rsvpOpen').addEventListener('click', openForm);
+    document.getElementById('introHandle').addEventListener('click', closeAll);
+    document.getElementById('formHandle').addEventListener('click', closeAll);
+    scrim.addEventListener('click', closeAll);
+    document.getElementById('rsvpDismiss').addEventListener('click', function(){
+      try{ localStorage.setItem('rsvp_hide', new Date().toDateString()); }catch(_){}
+      closeAll();
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key==='Escape' && scrim.classList.contains('open')) closeAll();
+    });
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var name=document.getElementById('rsvpName').value.trim();
+      var side=form.querySelector('input[name="side"]:checked');
+      var attend=form.querySelector('input[name="attend"]:checked');
+      if(!name){ showToast('성함을 입력해 주세요'); return; }
+      if(!side){ showToast('신랑측/신부측을 선택해 주세요'); return; }
+      if(!attend){ showToast('참석 여부를 선택해 주세요'); return; }
+      // 실제 배포 시: 여기서 저장소(시트/DB)로 전송
+      form.style.display='none'; done.style.display='block';
+      setTimeout(closeAll, 2400);
+    });
+
+    // 진입 시 1회 자동 노출 ('오늘 하루 보지 않기' 선택 시 제외)
+    // ── RSVP 임시 숨김: 사용하려면 아래 블록 주석 해제 ──
+    // try{
+    //   if(localStorage.getItem('rsvp_hide')!==new Date().toDateString()) setTimeout(openIntro,1300);
+    // }catch(_){ setTimeout(openIntro,1300); }
+  })();
+
+  /* ---------- BGM (첫 터치 시 재생) ---------- */
+  var bgmBtn=document.getElementById('bgmBtn'), audio=document.getElementById('bgmAudio'), bgmReady=false;
+  function toggleBgm(){
+    if(bgmBtn.classList.contains('playing')){
+      bgmBtn.classList.remove('playing'); audio.pause();
+    } else {
+      bgmBtn.classList.add('playing');
+      // 음원이 연결되어 있으면 재생 시도 (없으면 UI만 토글)
+      if(audio.currentSrc){ audio.play().catch(function(){}); }
+    }
+  }
+  bgmBtn.addEventListener('click', toggleBgm);
+
+  /* ---------- scroll to top ---------- */
+  var topBtn=document.getElementById('topBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY>600) topBtn.classList.add('show'); else topBtn.classList.remove('show');
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+})();
+</script>
+</body>
+</html>
