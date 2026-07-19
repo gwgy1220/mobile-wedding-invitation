@@ -618,9 +618,19 @@ a{color:inherit;}
   <header class="hero">
     <!-- 대표 웨딩 사진 (교체 가능): 3장이 페이드로 전환됩니다. src만 바꾸면 됩니다 -->
     <div class="hero-slides" aria-hidden="true">
-      <img class="hero-photo active" src="hero1.jpg" alt="신랑 신부 웨딩 사진" />
-      <img class="hero-photo" src="hero2.jpg" alt="" />
-      <img class="hero-photo" src="hero3.jpg" alt="" />
+      <!-- 반응형: 기기 DPR에 맞춰 800w/1200w 중 한 장만 다운로드 (JPEG=전 브라우저 호환) -->
+      <img class="hero-photo active" src="hero1-800.jpg"
+           srcset="hero1-800.jpg 800w, hero1-1200.jpg 1200w"
+           sizes="(min-width:460px) 460px, 100vw"
+           fetchpriority="high" alt="신랑 신부 웨딩 사진" />
+      <img class="hero-photo" src="hero2-800.jpg"
+           srcset="hero2-800.jpg 800w, hero2-1200.jpg 1200w"
+           sizes="(min-width:460px) 460px, 100vw"
+           loading="lazy" fetchpriority="low" alt="" />
+      <img class="hero-photo" src="hero3-800.jpg"
+           srcset="hero3-800.jpg 800w, hero3-1200.jpg 1200w"
+           sizes="(min-width:460px) 460px, 100vw"
+           loading="lazy" fetchpriority="low" alt="" />
     </div>
     <div class="scrim" aria-hidden="true"></div>
 
