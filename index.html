@@ -51,27 +51,32 @@
   --frame:460px;
 }
 
+/* 폰트 경로는 index.html 기준 상대 경로로 적는다.
+   GitHub Pages는 저장소 하위 경로(/mobile-wedding-invitation/)로 서비스되므로
+   '/fonts/...' 같은 절대 경로를 쓰면 배포본에서만 404가 난다.
+   파일명 대소문자는 실제 파일과 정확히 일치시킨다 (배포 서버는 대소문자를 구분). */
+
 /* White Angelica: 프로젝트에 포함된 폰트 파일을 직접 로드하여
    설치 여부와 관계없이 모든 하객에게 동일하게 표시된다. */
 @font-face{
   font-family:'White Angelica';
-  src: url('white_angelica/WhiteAngelica.ttf') format('truetype');
+  src: url('fonts/white_angelica/WhiteAngelica.ttf') format('truetype');
   font-display:swap;
 }
 @font-face{
   font-family:'histeagin';
-  src: url('histeagin.ttf') format('truetype');
+  src: url('fonts/histeagin.ttf') format('truetype');
   font-display:swap;
 }
 /* 08SeoulHangang: 한글 본문/제목용 (Light / Medium) */
 @font-face{
   font-family:'08SeoulHangang';
-  src: url('폰트/08SeoulHangangL.ttf') format('truetype');
+  src: url('fonts/08SeoulHangangL.ttf') format('truetype');
   font-weight:300; font-display:swap;
 }
 @font-face{
   font-family:'08SeoulHangang';
-  src: url('폰트/08SeoulHangangM.ttf') format('truetype');
+  src: url('fonts/08SeoulHangangM.ttf') format('truetype');
   font-weight:500; font-display:swap;
 }
 
@@ -105,14 +110,6 @@ a{color:inherit;}
 }
 
 /* ---------- typography helpers ---------- */
-.eyebrow{
-  font-family:var(--serif);
-  font-style:italic;
-  font-weight:500;
-  color:var(--sage);
-  font-size:var(--fs-body);
-  letter-spacing:.08em;
-}
 .title-ko{
   font-family:var(--myeongjo);
   font-weight:500;
@@ -133,23 +130,6 @@ a{color:inherit;}
 /* ---------- reveal on scroll ---------- */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease;}
 .reveal.in{opacity:1;transform:none;}
-
-/* ---------- thread divider (signature) ---------- */
-.thread{
-  height:96px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:0;
-}
-.thread .line{width:1px;height:34px;background:linear-gradient(var(--line-strong),var(--sage-soft));}
-.thread .node{
-  width:7px;height:7px;border-radius:50%;
-  border:1px solid var(--sage);
-  transform:rotate(45deg);
-  margin:7px 0;
-}
 
 /* ---------- image placeholder ---------- */
 .ph{
@@ -342,21 +322,6 @@ a{color:inherit;}
 .cal-note{font-family:var(--num);margin-top:22px;font-size:var(--fs-sm);color:var(--ink-soft);letter-spacing:.04em;}
 .cal-note b{color:var(--sage-deep);font-weight:600;}
 
-/* ================= WEDDING INFO ================= */
-.winfo{background:var(--paper-2);}
-.info-card{
-  background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
-  box-shadow:var(--shadow);overflow:hidden;text-align:left;
-}
-.info-card .cover{height:150px;color:#CBADA9;}
-.info-body{padding:26px 24px 24px;}
-.info-row{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);}
-.info-row:last-of-type{border-bottom:0;}
-.info-row .k{font-size:var(--fs-caption);letter-spacing:.16em;text-transform:uppercase;color:var(--sage-soft);font-weight:600;}
-.info-row .v{font-family:var(--num);font-size:var(--fs-body);color:var(--ink);text-align:right;font-weight:500;}
-.info-row .v small{display:block;color:var(--ink-soft);font-weight:400;font-size:var(--fs-caption);margin-top:2px;}
-.info-actions{display:flex;gap:10px;margin-top:22px;}
-
 /* ================= BUTTONS ================= */
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
@@ -394,7 +359,6 @@ a{color:inherit;}
 
 /* ================= DIRECTIONS ================= */
 .dir{background:var(--paper);}
-.map-ph{height:220px;border-radius:var(--radius);color:#CBADA9;box-shadow:var(--shadow);border:1px solid var(--line);}
 .map-embed{position:relative;height:220px;border-radius:var(--radius);box-shadow:none;border:1px solid var(--line);overflow:hidden;background:var(--paper-2);}
 .map-embed .map-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#C3A7A3;font-family:var(--num);font-size:var(--fs-label);letter-spacing:.24em;text-transform:uppercase;pointer-events:none;}
 .dir-actions{display:flex;gap:10px;margin:22px 0 30px;}
@@ -411,11 +375,6 @@ a{color:inherit;}
 }
 .copy-icon svg{width:18px;height:18px;}
 .copy-icon:active{background:var(--paper-2);}
-.copy-inline{
-  background:none;border:0;color:var(--sage);font-size:var(--fs-caption);font-weight:600;
-  letter-spacing:.08em;text-decoration:underline;text-underline-offset:3px;min-height:44px;padding:0 6px;
-}
-.addr-copy-btn{width:100%;flex:none;margin:22px 0 30px;}
 .transit{text-align:left;position:relative;padding-top:24px;}
 .transit::before{
   content:"";position:absolute;left:0;right:0;top:0;height:1px;
@@ -475,20 +434,6 @@ a{color:inherit;}
   background:transparent;color:var(--sage);font-size:var(--fs-caption);font-weight:600;transition:all .15s ease;
 }
 .copy-btn:active{background:var(--sage);color:#fff;}
-
-/* ================= CONTACT ================= */
-.contact{background:var(--paper-2);}
-.contact-grid{display:flex;flex-direction:column;gap:20px;}
-.contact-side{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);}
-.contact-side .who{font-family:var(--myeongjo);font-weight:700;font-size:var(--fs-body);margin-bottom:14px;}
-.contact-side .who span{color:var(--sage-soft);font-size:var(--fs-caption);font-weight:400;margin-left:8px;font-family:var(--sans);}
-.contact-btns{display:flex;gap:10px;}
-
-/* ================= SHARE ================= */
-.share{background:var(--paper);}
-.share-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;max-width:340px;margin:0 auto;}
-.share-grid .btn{flex:none;}
-.qr-ph{width:120px;height:120px;margin:26px auto 0;border-radius:10px;color:#CBADA9;border:1px solid var(--line);}
 
 /* ================= FOOTER ================= */
 .foot{background:var(--sage-deep);color:#fff;text-align:center;padding:80px 20px;}
@@ -1009,19 +954,6 @@ a{color:inherit;}
   document.addEventListener('click', function(e){
     var b=e.target.closest('[data-copy]'); if(!b)return;
     copyText(b.dataset.copy, b.dataset.label||'복사되었습니다');
-  });
-
-  /* ---------- nav / share (dummy) ---------- */
-  document.addEventListener('click', function(e){
-    var n=e.target.closest('[data-nav]');
-    if(n){ showToast(n.dataset.nav+' 길찾기 연결 (연동 예정)'); return; }
-    var s=e.target.closest('[data-share]');
-    if(s){
-      var t=s.dataset.share;
-      if(t==='qr'){ document.getElementById('qrPh').scrollIntoView({behavior:'smooth',block:'center'}); return; }
-      if(t==='sms' && navigator.share){ navigator.share({title:'기웅 & 가영 결혼합니다', url:location.href}).catch(function(){}); return; }
-      showToast((t==='kakao'?'카카오톡':'문자')+' 공유 연결 (연동 예정)');
-    }
   });
 
   /* ---------- BGM (첫 터치 시 재생) ---------- */
