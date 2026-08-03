@@ -56,27 +56,26 @@
    '/fonts/...' 같은 절대 경로를 쓰면 배포본에서만 404가 난다.
    파일명 대소문자는 실제 파일과 정확히 일치시킨다 (배포 서버는 대소문자를 구분). */
 
+/* 원본 TTF는 서브셋 woff2로 대체했다. 생성 방법은 fonts/README.md 참고.
+   한글은 KS X 1001 상용 2,350자 + 페이지 사용 문자만 포함하므로
+   본문을 수정할 때 이 범위를 벗어나는 희귀 글자는 시스템 폰트로 대체된다. */
+
 /* White Angelica: 프로젝트에 포함된 폰트 파일을 직접 로드하여
    설치 여부와 관계없이 모든 하객에게 동일하게 표시된다. */
 @font-face{
   font-family:'White Angelica';
-  src: url('fonts/white_angelica/WhiteAngelica.ttf') format('truetype');
-  font-display:swap;
-}
-@font-face{
-  font-family:'histeagin';
-  src: url('fonts/histeagin.ttf') format('truetype');
+  src: url('fonts/white_angelica/WhiteAngelica.woff2') format('woff2');
   font-display:swap;
 }
 /* 08SeoulHangang: 한글 본문/제목용 (Light / Medium) */
 @font-face{
   font-family:'08SeoulHangang';
-  src: url('fonts/08SeoulHangangL.ttf') format('truetype');
+  src: url('fonts/08SeoulHangangL.woff2') format('woff2');
   font-weight:300; font-display:swap;
 }
 @font-face{
   font-family:'08SeoulHangang';
-  src: url('fonts/08SeoulHangangM.ttf') format('truetype');
+  src: url('fonts/08SeoulHangangM.woff2') format('woff2');
   font-weight:500; font-display:swap;
 }
 
