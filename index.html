@@ -334,7 +334,7 @@ a{color:inherit;}
 .gallery{background:var(--paper-2);overflow:hidden;}
 .gallery .section-head{margin-bottom:8px;}
 .g-scroll{
-  display:flex;align-items:flex-end;gap:8px;
+  display:flex;align-items:flex-end;gap:4px;
   overflow-x:auto;overflow-y:hidden;
   margin:0 -20px;padding:16px 20px 22px;
   -webkit-overflow-scrolling:touch;
@@ -723,8 +723,8 @@ a{color:inherit;}
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m6 15 6-6 6 6"/></svg>
 </button>
 
-<!-- audio: 실제 배포 시 src에 음원 파일 연결 (예: bgm.mp3) -->
-<audio id="bgmAudio" loop preload="none"></audio>
+<!-- audio: 배경음악 (플로팅 재생 버튼으로 제어) -->
+<audio id="bgmAudio" loop preload="none" src="arpmedia-calm-soft-569438.mp3"></audio>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
@@ -986,8 +986,8 @@ a{color:inherit;}
       bgmBtn.classList.remove('playing'); audio.pause();
     } else {
       bgmBtn.classList.add('playing');
-      // 음원이 연결되어 있으면 재생 시도 (없으면 UI만 토글)
-      if(audio.currentSrc){ audio.play().catch(function(){}); }
+      // 음원 재생 시도 (사용자 클릭이므로 자동재생 정책 통과)
+      audio.play().catch(function(){ bgmBtn.classList.remove('playing'); });
     }
   }
   bgmBtn.addEventListener('click', toggleBgm);
